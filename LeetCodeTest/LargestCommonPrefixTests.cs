@@ -24,5 +24,13 @@ namespace LeetCodeTest
             string prefix = largestCommonPrefix.FindLargestCommonPrefix(input);
             Assert.AreEqual("fl", prefix);
         }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            string[] input = { "c", "acc", "cc" };
+            string prefix = largestCommonPrefix.FindLargestCommonPrefix(input);
+            Assert.AreEqual("", prefix);
+        }
     }
 }

@@ -10,8 +10,19 @@ namespace LeetCode
     {
         public string FindLargestCommonPrefix(string [] inputs)
         {
-
-            return "";
+            string prefix = inputs[0];
+            for(int i = 1; i < inputs.Length; ++i)
+            {
+                while(inputs[i].IndexOf(prefix) != 0)
+                {
+                    prefix = prefix.Substring(0, prefix.Length - 1);
+                    if(string.IsNullOrEmpty(prefix))
+                    {
+                        return "";
+                    }
+                }
+            }
+            return prefix;
         }
     }
 }
