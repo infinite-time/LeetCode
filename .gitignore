@@ -1,7 +1,7 @@
-LeetCode/bin/
-LeetCode/obj
-LeetCodeTest/bin
-LeetCodeTes/obj
-TestResults
-.vs
+LeetCode/bin/*
+LeetCode/obj*
+LeetCodeTest/bin/*
+LeetCodeTes/obj/*
+TestResults/*
+.vs/*
 
